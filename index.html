@@ -5,6 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IGDTUW Campus Map</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      z-index: 10;
+    }
+  </style>
 </head>
 <body>
   <div id="loading-screen">Loading IGDTUW Campus...</div>
@@ -19,15 +39,6 @@
 
   <!-- Tooltip -->
   <div id="tooltip"></div>
-
-  <!-- Modal -->
-  <div id="info-modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2 id="modal-title"></h2>
-      <p id="modal-description"></p>
-    </div>
-  </div>
 
   <!-- Feedback Form -->
   <div id="feedback-form">
